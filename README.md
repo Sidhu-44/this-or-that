@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌟 ThisOrThat — Daily Social Voting App
 
 > **One question. Two choices. What's your pick?**
@@ -209,3 +210,7 @@ python -m pytest -v
   - `VITE_API_URL`: URL of the deployed backend (e.g., `https://api.thisorthat.example.com`)
 - Build command: `npm run build`
 - Output directory: `dist`
+=======
+# this-or-that
+ThisOrThat – A social daily voting platform where users choose between two options, vote instantly, and see live results. Discover daily polls, share your opinions, and explore past votes in the archive.
+>>>>>>> e597372c7cce53cfe3db18e49d1da25225af170f
