@@ -5,7 +5,7 @@ from app.config import settings
 from app.database import engine, Base
 from app.api import polls, admin
 from app.timezone_utils import get_ist_now, get_current_ist_date
-
+from sqlalchemy import text
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Initialize database tables on startup
@@ -46,7 +46,19 @@ def health_check():
         "ist_time": get_ist_now().isoformat(),
         "ist_date": str(get_current_ist_date())
     }
-
+@app.get("/health/db")
+def database_health():
+    try:
+        with engine.connect() as connection:
+            connection.execute(text("SELECT 1"))
+        return {"status": "healthy", "database": "connected"}
+    except Exception as e:
+        return {
+            "status": "unhealthy",
+            "database": "disconnected",
+            "error": str(e)
+        }
+    
 @app.get("/", tags=["system"])
 def root():
     return {
