@@ -1,0 +1,1 @@
+"""ThisOrThat backend application package."""
