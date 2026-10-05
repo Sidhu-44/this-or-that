@@ -20,3 +20,5 @@ dist/
 
 # Editor
 .vscode/
+# Local project archive
+ThisOrThat-Source-Code.zip
