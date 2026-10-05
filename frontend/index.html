@@ -2,16 +2,144 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23FF553E'/><text x='50' y='68' font-size='55' font-family='sans-serif' font-weight='900' fill='white' text-anchor='middle'>TT</text></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ThisOrThat — Daily Social Voting</title>
-    <meta name="description" content="One question. Two choices. What's your pick? Vote once every day on ThisOrThat." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,*<*&#x73;vg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>*<*&#x72;ect width='100' height='100' rx='25' fill='%23FF553E'/>*<*&#x74;ext x='50' y='68' font-size='55' font-family='sans-serif' font-weight='900' fill='white' text-anchor='middle'>T&#x54;*<*/text>*<*/svg>"
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>
+      ThisOrThat — Daily Voting Game, Polls & Questions
+    </title>
+
+    <meta
+      name="description"
+      content="ThisOrThat is a daily social voting game founded by Ande Naga Subramanyam in West Godavari, Andhra Pradesh, India. Choose between two options, vote instantly, and see what the community thinks."
+    />
+
+    <meta
+      name="author"
+      content="Ande Naga Subramanyam"
+    />
+
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+
+    <link
+      rel="canonical"
+      href="https://this-or-that-gds.vercel.app/"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="ThisOrThat — Daily Voting Game, Polls & Questions"
+    />
+
+    <meta
+      property="og:description"
+      content="Choose between two options, vote instantly, and discover what the community thinks."
+    />
+
+    <meta
+      property="og:url"
+      content="https://this-or-that-gds.vercel.app/"
+    />
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:site_name"
+      content="ThisOrThat"
+    />
+
+    <meta
+      property="og:locale"
+      content="en_IN"
+    />
+
+    <meta
+      name="theme-color"
+      content="#ffffff"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://this-or-that-gds.vercel.app/#organization",
+          "name": "ThisOrThat",
+          "alternateName": "This Or That",
+          "url": "https://this-or-that-gds.vercel.app/",
+          "description": "ThisOrThat is a daily social voting game where people choose between two options and discover what the community thinks.",
+          "founder": {
+            "@id": "https://this-or-that-gds.vercel.app/#founder"
+          },
+          "foundingLocation": {
+            "@type": "Place",
+            "name": "West Godavari, Andhra Pradesh, India"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://this-or-that-gds.vercel.app/#founder",
+          "name": "Ande Naga Subramanyam",
+          "jobTitle": "Founder",
+          "worksFor": {
+            "@id": "https://this-or-that-gds.vercel.app/#organization"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://this-or-that-gds.vercel.app/#website",
+          "name": "ThisOrThat",
+          "url": "https://this-or-that-gds.vercel.app/",
+          "publisher": {
+            "@id": "https://this-or-that-gds.vercel.app/#organization"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
+
   <body class="bg-warm-100 text-ink-900 font-sans antialiased">
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <script
+      type="module"
+      src="/src/main.tsx"
+    ></script>
   </body>
 </html>

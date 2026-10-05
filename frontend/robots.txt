@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+
+Sitemap: https://this-or-that-gds.vercel.app/sitemap.xml
