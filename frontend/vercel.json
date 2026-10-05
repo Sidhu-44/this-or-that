@@ -2,7 +2,11 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/((?!robots\\.txt|sitemap\\.xml).*)",
+      "source": "/admin",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/archive",
       "destination": "/index.html"
     }
   ]
